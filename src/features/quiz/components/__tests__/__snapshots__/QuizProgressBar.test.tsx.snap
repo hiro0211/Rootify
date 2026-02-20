@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuizProgressBar renders correctly 1`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "gap": 4,
+      "height": 8,
+      "marginBottom": 16,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "borderRadius": 4,
+        },
+        {
+          "backgroundColor": "#27AE60",
+          "flex": 1,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "borderRadius": 4,
+        },
+        {
+          "backgroundColor": "#E74C3C",
+          "flex": 1,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "borderRadius": 4,
+        },
+        {
+          "backgroundColor": "#2E86C1",
+          "flex": 1,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "borderRadius": 4,
+        },
+        {
+          "backgroundColor": "#E5E5E5",
+          "flex": 1,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "borderRadius": 4,
+        },
+        {
+          "backgroundColor": "#E5E5E5",
+          "flex": 1,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "borderRadius": 4,
+        },
+        {
+          "backgroundColor": "#E5E5E5",
+          "flex": 1,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "borderRadius": 4,
+        },
+        {
+          "backgroundColor": "#E5E5E5",
+          "flex": 1,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "borderRadius": 4,
+        },
+        {
+          "backgroundColor": "#E5E5E5",
+          "flex": 1,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "borderRadius": 4,
+        },
+        {
+          "backgroundColor": "#E5E5E5",
+          "flex": 1,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "borderRadius": 4,
+        },
+        {
+          "backgroundColor": "#E5E5E5",
+          "flex": 1,
+        },
+      ]
+    }
+  />
+</View>
+`;
