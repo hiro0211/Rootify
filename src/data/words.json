@@ -2323,5 +2323,1539 @@
     "example_ja": "",
     "toeic_level": 800,
     "sort_order": 103
+  },
+
+  {
+    "id": "word_vision",
+    "etymology_id": "etym_vis",
+    "word": "vision",
+    "pronunciation": "víʒən",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-vis",
+    "root_meaning_ja": "見る",
+    "suffix": "-ion",
+    "suffix_meaning": "こと（名詞）",
+    "combined_meaning": "見ること",
+    "meaning_ja": "視覚、ビジョン",
+    "meaning_sub_ja": "先見の明",
+    "part_of_speech": "名詞",
+    "derivatives": [
+      {
+        "word": "visual",
+        "pos": "形容詞",
+        "meaning": "視覚の"
+      }
+    ],
+    "example_en": "She has a clear vision for the company's future.",
+    "example_ja": "彼女は会社の将来に対する明確なビジョンを持っている。",
+    "toeic_level": 600,
+    "sort_order": 104
+  },
+  {
+    "id": "word_evidence",
+    "etymology_id": "etym_vis",
+    "word": "evidence",
+    "pronunciation": "évədəns",
+    "prefix": "e-",
+    "prefix_meaning": "外に",
+    "prefix_meaning_en": "out",
+    "root": "-vis",
+    "root_meaning_ja": "見る",
+    "suffix": "-ence",
+    "suffix_meaning": "性質・行為",
+    "combined_meaning": "外に見えるもの",
+    "meaning_ja": "証拠",
+    "meaning_sub_ja": "",
+    "part_of_speech": "名詞",
+    "derivatives": [
+      {
+        "word": "evident",
+        "pos": "形容詞",
+        "meaning": "明白な"
+      }
+    ],
+    "example_en": "There is no evidence to support his claim.",
+    "example_ja": "彼の主張を裏付ける証拠はない。",
+    "toeic_level": 700,
+    "sort_order": 105
+  },
+  {
+    "id": "word_revise",
+    "etymology_id": "etym_vis",
+    "word": "revise",
+    "pronunciation": "riváiz",
+    "prefix": "re-",
+    "prefix_meaning": "再び/元に",
+    "prefix_meaning_en": "again",
+    "root": "-vis",
+    "root_meaning_ja": "見る",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "再び見る",
+    "meaning_ja": "修正する",
+    "meaning_sub_ja": "改訂する",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "revision",
+        "pos": "名詞",
+        "meaning": "修正"
+      }
+    ],
+    "example_en": "Please revise the document before submitting it.",
+    "example_ja": "提出する前に書類を修正してください。",
+    "toeic_level": 700,
+    "sort_order": 106
+  },
+
+  {
+    "id": "word_predict",
+    "etymology_id": "etym_dict",
+    "word": "predict",
+    "pronunciation": "pridíkt",
+    "prefix": "pre-",
+    "prefix_meaning": "前に",
+    "prefix_meaning_en": "before",
+    "root": "-dict",
+    "root_meaning_ja": "言う",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "前もって言う",
+    "meaning_ja": "予測する",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "prediction",
+        "pos": "名詞",
+        "meaning": "予測"
+      }
+    ],
+    "example_en": "Experts predict that the economy will recover next year.",
+    "example_ja": "専門家は来年景気が回復すると予測している。",
+    "toeic_level": 700,
+    "sort_order": 107
+  },
+  {
+    "id": "word_contradict",
+    "etymology_id": "etym_dict",
+    "word": "contradict",
+    "pronunciation": "kɑ̀ntrədíkt",
+    "prefix": "contra-",
+    "prefix_meaning": "反対に",
+    "prefix_meaning_en": "against",
+    "root": "-dict",
+    "root_meaning_ja": "言う",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "反対に言う",
+    "meaning_ja": "矛盾する",
+    "meaning_sub_ja": "反論する",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "contradiction",
+        "pos": "名詞",
+        "meaning": "矛盾"
+      }
+    ],
+    "example_en": "His actions contradict his words.",
+    "example_ja": "彼の行動は彼の言葉と矛盾している。",
+    "toeic_level": 700,
+    "sort_order": 108
+  },
+  {
+    "id": "word_dictionary",
+    "etymology_id": "etym_dict",
+    "word": "dictionary",
+    "pronunciation": "díkʃənèri",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-dict",
+    "root_meaning_ja": "言う",
+    "suffix": "-ary",
+    "suffix_meaning": "場所・もの",
+    "combined_meaning": "言葉を集めたもの",
+    "meaning_ja": "辞書",
+    "meaning_sub_ja": "",
+    "part_of_speech": "名詞",
+    "derivatives": [],
+    "example_en": "Look up the word in the dictionary.",
+    "example_ja": "その単語を辞書で調べなさい。",
+    "toeic_level": 600,
+    "sort_order": 109
+  },
+
+  {
+    "id": "word_include",
+    "etymology_id": "etym_clude",
+    "word": "include",
+    "pronunciation": "inklúːd",
+    "prefix": "in-",
+    "prefix_meaning": "中に",
+    "prefix_meaning_en": "in",
+    "root": "-clude",
+    "root_meaning_ja": "閉じる",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "中に閉じ込める",
+    "meaning_ja": "含む",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "inclusion",
+        "pos": "名詞",
+        "meaning": "包含"
+      }
+    ],
+    "example_en": "The price includes tax.",
+    "example_ja": "価格には税金が含まれている。",
+    "toeic_level": 600,
+    "sort_order": 110
+  },
+  {
+    "id": "word_exclude",
+    "etymology_id": "etym_clude",
+    "word": "exclude",
+    "pronunciation": "iksklúːd",
+    "prefix": "ex-",
+    "prefix_meaning": "外に",
+    "prefix_meaning_en": "out",
+    "root": "-clude",
+    "root_meaning_ja": "閉じる",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "外に閉め出す",
+    "meaning_ja": "除外する",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "exclusion",
+        "pos": "名詞",
+        "meaning": "除外"
+      }
+    ],
+    "example_en": "The report excludes data from last year.",
+    "example_ja": "そのレポートは昨年のデータを除外している。",
+    "toeic_level": 700,
+    "sort_order": 111
+  },
+  {
+    "id": "word_conclude",
+    "etymology_id": "etym_clude",
+    "word": "conclude",
+    "pronunciation": "kənklúːd",
+    "prefix": "con-",
+    "prefix_meaning": "共に",
+    "prefix_meaning_en": "together",
+    "root": "-clude",
+    "root_meaning_ja": "閉じる",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "完全に閉じる",
+    "meaning_ja": "結論づける",
+    "meaning_sub_ja": "終了する",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "conclusion",
+        "pos": "名詞",
+        "meaning": "結論"
+      }
+    ],
+    "example_en": "We concluded that the plan was not feasible.",
+    "example_ja": "私たちはその計画が実行不可能だと結論づけた。",
+    "toeic_level": 700,
+    "sort_order": 112
+  },
+
+  {
+    "id": "word_interrupt",
+    "etymology_id": "etym_rupt",
+    "word": "interrupt",
+    "pronunciation": "ìntərʌ́pt",
+    "prefix": "inter-",
+    "prefix_meaning": "間に",
+    "prefix_meaning_en": "between",
+    "root": "-rupt",
+    "root_meaning_ja": "壊す",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "間を壊す",
+    "meaning_ja": "中断する",
+    "meaning_sub_ja": "邪魔をする",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "interruption",
+        "pos": "名詞",
+        "meaning": "中断"
+      }
+    ],
+    "example_en": "Sorry to interrupt, but there is an urgent call.",
+    "example_ja": "お邪魔してすみませんが、緊急の電話です。",
+    "toeic_level": 700,
+    "sort_order": 113
+  },
+  {
+    "id": "word_disrupt",
+    "etymology_id": "etym_rupt",
+    "word": "disrupt",
+    "pronunciation": "disrʌ́pt",
+    "prefix": "dis-",
+    "prefix_meaning": "離れて",
+    "prefix_meaning_en": "apart",
+    "root": "-rupt",
+    "root_meaning_ja": "壊す",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "離れて壊す",
+    "meaning_ja": "混乱させる",
+    "meaning_sub_ja": "崩壊させる",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "disruption",
+        "pos": "名詞",
+        "meaning": "混乱"
+      }
+    ],
+    "example_en": "The storm disrupted train services.",
+    "example_ja": "嵐が鉄道サービスを混乱させた。",
+    "toeic_level": 700,
+    "sort_order": 114
+  },
+  {
+    "id": "word_corrupt",
+    "etymology_id": "etym_rupt",
+    "word": "corrupt",
+    "pronunciation": "kərʌ́pt",
+    "prefix": "cor-",
+    "prefix_meaning": "共に",
+    "prefix_meaning_en": "together",
+    "root": "-rupt",
+    "root_meaning_ja": "壊す",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "完全に壊す",
+    "meaning_ja": "腐敗した",
+    "meaning_sub_ja": "堕落させる",
+    "part_of_speech": "形容詞",
+    "derivatives": [
+      {
+        "word": "corruption",
+        "pos": "名詞",
+        "meaning": "腐敗"
+      }
+    ],
+    "example_en": "The corrupt official was arrested.",
+    "example_ja": "腐敗した役人が逮捕された。",
+    "toeic_level": 800,
+    "sort_order": 115
+  },
+
+  {
+    "id": "word_assign",
+    "etymology_id": "etym_sign",
+    "word": "assign",
+    "pronunciation": "əsáin",
+    "prefix": "as-",
+    "prefix_meaning": "〜の方へ",
+    "prefix_meaning_en": "toward",
+    "root": "-sign",
+    "root_meaning_ja": "しるし",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "しるしを付ける",
+    "meaning_ja": "割り当てる",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "assignment",
+        "pos": "名詞",
+        "meaning": "課題、割り当て"
+      }
+    ],
+    "example_en": "The manager assigned tasks to the team members.",
+    "example_ja": "マネージャーがチームメンバーに仕事を割り当てた。",
+    "toeic_level": 700,
+    "sort_order": 116
+  },
+  {
+    "id": "word_design",
+    "etymology_id": "etym_sign",
+    "word": "design",
+    "pronunciation": "dizáin",
+    "prefix": "de-",
+    "prefix_meaning": "離れて/下に",
+    "prefix_meaning_en": "down",
+    "root": "-sign",
+    "root_meaning_ja": "しるし",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "しるしを付けて描く",
+    "meaning_ja": "設計する",
+    "meaning_sub_ja": "デザイン",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "designer",
+        "pos": "名詞",
+        "meaning": "デザイナー"
+      }
+    ],
+    "example_en": "She designed the new company logo.",
+    "example_ja": "彼女は新しい会社のロゴをデザインした。",
+    "toeic_level": 600,
+    "sort_order": 117
+  },
+  {
+    "id": "word_signal",
+    "etymology_id": "etym_sign",
+    "word": "signal",
+    "pronunciation": "sígnəl",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-sign",
+    "root_meaning_ja": "しるし",
+    "suffix": "-al",
+    "suffix_meaning": "行為",
+    "combined_meaning": "しるしとなるもの",
+    "meaning_ja": "信号、合図",
+    "meaning_sub_ja": "",
+    "part_of_speech": "名詞",
+    "derivatives": [],
+    "example_en": "The traffic signal turned red.",
+    "example_ja": "交通信号が赤に変わった。",
+    "toeic_level": 600,
+    "sort_order": 118
+  },
+
+  {
+    "id": "word_invent",
+    "etymology_id": "etym_vent",
+    "word": "invent",
+    "pronunciation": "invént",
+    "prefix": "in-",
+    "prefix_meaning": "中に",
+    "prefix_meaning_en": "in",
+    "root": "-vent",
+    "root_meaning_ja": "来る",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "中に来る（思いつく）",
+    "meaning_ja": "発明する",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "invention",
+        "pos": "名詞",
+        "meaning": "発明"
+      },
+      {
+        "word": "inventor",
+        "pos": "名詞",
+        "meaning": "発明家"
+      }
+    ],
+    "example_en": "Edison invented the light bulb.",
+    "example_ja": "エジソンは電球を発明した。",
+    "toeic_level": 600,
+    "sort_order": 119
+  },
+  {
+    "id": "word_prevent",
+    "etymology_id": "etym_vent",
+    "word": "prevent",
+    "pronunciation": "privént",
+    "prefix": "pre-",
+    "prefix_meaning": "前に",
+    "prefix_meaning_en": "before",
+    "root": "-vent",
+    "root_meaning_ja": "来る",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "前に来る（先手を打つ）",
+    "meaning_ja": "防ぐ",
+    "meaning_sub_ja": "予防する",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "prevention",
+        "pos": "名詞",
+        "meaning": "予防"
+      }
+    ],
+    "example_en": "Regular exercise can prevent many diseases.",
+    "example_ja": "定期的な運動は多くの病気を予防できる。",
+    "toeic_level": 700,
+    "sort_order": 120
+  },
+  {
+    "id": "word_event",
+    "etymology_id": "etym_vent",
+    "word": "event",
+    "pronunciation": "ivént",
+    "prefix": "e-",
+    "prefix_meaning": "外に",
+    "prefix_meaning_en": "out",
+    "root": "-vent",
+    "root_meaning_ja": "来る",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "外に出てくること",
+    "meaning_ja": "出来事、イベント",
+    "meaning_sub_ja": "",
+    "part_of_speech": "名詞",
+    "derivatives": [
+      {
+        "word": "eventual",
+        "pos": "形容詞",
+        "meaning": "最終的な"
+      }
+    ],
+    "example_en": "The company is organizing a special event.",
+    "example_ja": "会社は特別なイベントを企画している。",
+    "toeic_level": 600,
+    "sort_order": 121
+  },
+
+  {
+    "id": "word_progress",
+    "etymology_id": "etym_grad",
+    "word": "progress",
+    "pronunciation": "prάgres",
+    "prefix": "pro-",
+    "prefix_meaning": "前に",
+    "prefix_meaning_en": "forward",
+    "root": "-grad/gress",
+    "root_meaning_ja": "歩む/進む",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "前に進む",
+    "meaning_ja": "進歩する",
+    "meaning_sub_ja": "進行",
+    "part_of_speech": "名詞",
+    "derivatives": [
+      {
+        "word": "progressive",
+        "pos": "形容詞",
+        "meaning": "進歩的な"
+      }
+    ],
+    "example_en": "The project is making good progress.",
+    "example_ja": "プロジェクトは順調に進んでいる。",
+    "toeic_level": 600,
+    "sort_order": 122
+  },
+  {
+    "id": "word_graduate",
+    "etymology_id": "etym_grad",
+    "word": "graduate",
+    "pronunciation": "grǽdʒuèit",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-grad/gress",
+    "root_meaning_ja": "歩む/進む",
+    "suffix": "-ate",
+    "suffix_meaning": "〜する",
+    "combined_meaning": "段階を進む",
+    "meaning_ja": "卒業する",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "graduation",
+        "pos": "名詞",
+        "meaning": "卒業"
+      }
+    ],
+    "example_en": "She graduated from university last year.",
+    "example_ja": "彼女は昨年大学を卒業した。",
+    "toeic_level": 600,
+    "sort_order": 123
+  },
+  {
+    "id": "word_aggressive",
+    "etymology_id": "etym_grad",
+    "word": "aggressive",
+    "pronunciation": "əgrésiv",
+    "prefix": "ag-",
+    "prefix_meaning": "〜の方へ",
+    "prefix_meaning_en": "toward",
+    "root": "-grad/gress",
+    "root_meaning_ja": "歩む/進む",
+    "suffix": "-ive",
+    "suffix_meaning": "性質（形容詞）",
+    "combined_meaning": "〜の方へ進む性質",
+    "meaning_ja": "攻撃的な",
+    "meaning_sub_ja": "積極的な",
+    "part_of_speech": "形容詞",
+    "derivatives": [
+      {
+        "word": "aggression",
+        "pos": "名詞",
+        "meaning": "攻撃"
+      }
+    ],
+    "example_en": "The company adopted an aggressive marketing strategy.",
+    "example_ja": "その会社は積極的なマーケティング戦略を採用した。",
+    "toeic_level": 700,
+    "sort_order": 124
+  },
+
+  {
+    "id": "word_action",
+    "etymology_id": "etym_act",
+    "word": "action",
+    "pronunciation": "ǽkʃən",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-act",
+    "root_meaning_ja": "動く/行う",
+    "suffix": "-ion",
+    "suffix_meaning": "こと（名詞）",
+    "combined_meaning": "行うこと",
+    "meaning_ja": "行動、行為",
+    "meaning_sub_ja": "",
+    "part_of_speech": "名詞",
+    "derivatives": [
+      {
+        "word": "act",
+        "pos": "動詞",
+        "meaning": "行動する"
+      }
+    ],
+    "example_en": "We need to take immediate action.",
+    "example_ja": "私たちは直ちに行動を取る必要がある。",
+    "toeic_level": 600,
+    "sort_order": 125
+  },
+  {
+    "id": "word_react",
+    "etymology_id": "etym_act",
+    "word": "react",
+    "pronunciation": "riǽkt",
+    "prefix": "re-",
+    "prefix_meaning": "再び/元に",
+    "prefix_meaning_en": "back",
+    "root": "-act",
+    "root_meaning_ja": "動く/行う",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "反対に動く",
+    "meaning_ja": "反応する",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "reaction",
+        "pos": "名詞",
+        "meaning": "反応"
+      }
+    ],
+    "example_en": "How did she react to the news?",
+    "example_ja": "彼女はそのニュースにどう反応しましたか？",
+    "toeic_level": 700,
+    "sort_order": 126
+  },
+  {
+    "id": "word_active",
+    "etymology_id": "etym_act",
+    "word": "active",
+    "pronunciation": "ǽktiv",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-act",
+    "root_meaning_ja": "動く/行う",
+    "suffix": "-ive",
+    "suffix_meaning": "性質（形容詞）",
+    "combined_meaning": "動く性質の",
+    "meaning_ja": "活動的な",
+    "meaning_sub_ja": "積極的な",
+    "part_of_speech": "形容詞",
+    "derivatives": [
+      {
+        "word": "activity",
+        "pos": "名詞",
+        "meaning": "活動"
+      },
+      {
+        "word": "activate",
+        "pos": "動詞",
+        "meaning": "活性化する"
+      }
+    ],
+    "example_en": "She leads an active lifestyle.",
+    "example_ja": "彼女は活動的な生活を送っている。",
+    "toeic_level": 600,
+    "sort_order": 127
+  },
+
+  {
+    "id": "word_move",
+    "etymology_id": "etym_mov",
+    "word": "move",
+    "pronunciation": "múːv",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-mov",
+    "root_meaning_ja": "動く",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "動く",
+    "meaning_ja": "動かす、移動する",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "movement",
+        "pos": "名詞",
+        "meaning": "動き、運動"
+      }
+    ],
+    "example_en": "We need to move the meeting to Friday.",
+    "example_ja": "会議を金曜日に移す必要がある。",
+    "toeic_level": 600,
+    "sort_order": 128
+  },
+  {
+    "id": "word_remove",
+    "etymology_id": "etym_mov",
+    "word": "remove",
+    "pronunciation": "rimúːv",
+    "prefix": "re-",
+    "prefix_meaning": "再び/元に",
+    "prefix_meaning_en": "back",
+    "root": "-mov",
+    "root_meaning_ja": "動く",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "元に動かす",
+    "meaning_ja": "取り除く",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "removal",
+        "pos": "名詞",
+        "meaning": "除去"
+      }
+    ],
+    "example_en": "Please remove your shoes before entering.",
+    "example_ja": "入る前に靴を脱いでください。",
+    "toeic_level": 600,
+    "sort_order": 129
+  },
+  {
+    "id": "word_motivate",
+    "etymology_id": "etym_mov",
+    "word": "motivate",
+    "pronunciation": "móutəvèit",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-mov",
+    "root_meaning_ja": "動く",
+    "suffix": "-ate",
+    "suffix_meaning": "〜する",
+    "combined_meaning": "動かす",
+    "meaning_ja": "動機づける",
+    "meaning_sub_ja": "やる気を起こさせる",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "motivation",
+        "pos": "名詞",
+        "meaning": "動機"
+      }
+    ],
+    "example_en": "The bonus motivated the employees to work harder.",
+    "example_ja": "ボーナスが従業員をより一生懸命働かせる動機になった。",
+    "toeic_level": 700,
+    "sort_order": 130
+  },
+
+  {
+    "id": "word_influence",
+    "etymology_id": "etym_flu",
+    "word": "influence",
+    "pronunciation": "ínfluəns",
+    "prefix": "in-",
+    "prefix_meaning": "中に",
+    "prefix_meaning_en": "in",
+    "root": "-flu",
+    "root_meaning_ja": "流れる",
+    "suffix": "-ence",
+    "suffix_meaning": "性質・行為",
+    "combined_meaning": "中に流れ込むもの",
+    "meaning_ja": "影響",
+    "meaning_sub_ja": "影響を与える",
+    "part_of_speech": "名詞",
+    "derivatives": [
+      {
+        "word": "influential",
+        "pos": "形容詞",
+        "meaning": "影響力のある"
+      }
+    ],
+    "example_en": "Social media has a strong influence on young people.",
+    "example_ja": "ソーシャルメディアは若者に強い影響を与えている。",
+    "toeic_level": 700,
+    "sort_order": 131
+  },
+  {
+    "id": "word_fluid",
+    "etymology_id": "etym_flu",
+    "word": "fluid",
+    "pronunciation": "flúːid",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-flu",
+    "root_meaning_ja": "流れる",
+    "suffix": "-id",
+    "suffix_meaning": "性質",
+    "combined_meaning": "流れるもの",
+    "meaning_ja": "液体、流動的な",
+    "meaning_sub_ja": "",
+    "part_of_speech": "名詞",
+    "derivatives": [],
+    "example_en": "The situation remains fluid and may change at any time.",
+    "example_ja": "状況は流動的であり、いつでも変わる可能性がある。",
+    "toeic_level": 700,
+    "sort_order": 132
+  },
+  {
+    "id": "word_fluctuate",
+    "etymology_id": "etym_flu",
+    "word": "fluctuate",
+    "pronunciation": "flʌ́ktʃuèit",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-flu",
+    "root_meaning_ja": "流れる",
+    "suffix": "-ate",
+    "suffix_meaning": "〜する",
+    "combined_meaning": "流れるように揺れ動く",
+    "meaning_ja": "変動する",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "fluctuation",
+        "pos": "名詞",
+        "meaning": "変動"
+      }
+    ],
+    "example_en": "Stock prices fluctuate daily.",
+    "example_ja": "株価は毎日変動する。",
+    "toeic_level": 800,
+    "sort_order": 133
+  },
+
+  {
+    "id": "word_collect",
+    "etymology_id": "etym_lect",
+    "word": "collect",
+    "pronunciation": "kəlékt",
+    "prefix": "col-",
+    "prefix_meaning": "共に",
+    "prefix_meaning_en": "together",
+    "root": "-lect",
+    "root_meaning_ja": "集める/読む",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "共に集める",
+    "meaning_ja": "集める",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "collection",
+        "pos": "名詞",
+        "meaning": "収集"
+      }
+    ],
+    "example_en": "She collects stamps as a hobby.",
+    "example_ja": "彼女は趣味で切手を集めている。",
+    "toeic_level": 600,
+    "sort_order": 134
+  },
+  {
+    "id": "word_select",
+    "etymology_id": "etym_lect",
+    "word": "select",
+    "pronunciation": "silékt",
+    "prefix": "se-",
+    "prefix_meaning": "離れて",
+    "prefix_meaning_en": "apart",
+    "root": "-lect",
+    "root_meaning_ja": "集める/読む",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "離れて選び集める",
+    "meaning_ja": "選ぶ",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "selection",
+        "pos": "名詞",
+        "meaning": "選択"
+      }
+    ],
+    "example_en": "Please select the best candidate for the position.",
+    "example_ja": "そのポジションに最適な候補者を選んでください。",
+    "toeic_level": 700,
+    "sort_order": 135
+  },
+  {
+    "id": "word_election",
+    "etymology_id": "etym_lect",
+    "word": "election",
+    "pronunciation": "ilékʃən",
+    "prefix": "e-",
+    "prefix_meaning": "外に",
+    "prefix_meaning_en": "out",
+    "root": "-lect",
+    "root_meaning_ja": "集める/読む",
+    "suffix": "-ion",
+    "suffix_meaning": "こと（名詞）",
+    "combined_meaning": "外に選び出すこと",
+    "meaning_ja": "選挙",
+    "meaning_sub_ja": "",
+    "part_of_speech": "名詞",
+    "derivatives": [
+      {
+        "word": "elect",
+        "pos": "動詞",
+        "meaning": "選出する"
+      }
+    ],
+    "example_en": "The presidential election will be held next month.",
+    "example_ja": "大統領選挙は来月行われる。",
+    "toeic_level": 700,
+    "sort_order": 136
+  },
+
+  {
+    "id": "word_apply",
+    "etymology_id": "etym_plic",
+    "word": "apply",
+    "pronunciation": "əplái",
+    "prefix": "ap-",
+    "prefix_meaning": "〜の方へ",
+    "prefix_meaning_en": "toward",
+    "root": "-plic/ply",
+    "root_meaning_ja": "折る/重ねる",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "〜の方へ折り重ねる",
+    "meaning_ja": "応募する、適用する",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "application",
+        "pos": "名詞",
+        "meaning": "応募、適用"
+      },
+      {
+        "word": "applicant",
+        "pos": "名詞",
+        "meaning": "応募者"
+      }
+    ],
+    "example_en": "She applied for the job online.",
+    "example_ja": "彼女はオンラインでその仕事に応募した。",
+    "toeic_level": 600,
+    "sort_order": 137
+  },
+  {
+    "id": "word_complicate",
+    "etymology_id": "etym_plic",
+    "word": "complicate",
+    "pronunciation": "kάmpləkèit",
+    "prefix": "com-",
+    "prefix_meaning": "共に",
+    "prefix_meaning_en": "together",
+    "root": "-plic/ply",
+    "root_meaning_ja": "折る/重ねる",
+    "suffix": "-ate",
+    "suffix_meaning": "〜する",
+    "combined_meaning": "共に折り重ねる",
+    "meaning_ja": "複雑にする",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "complicated",
+        "pos": "形容詞",
+        "meaning": "複雑な"
+      },
+      {
+        "word": "complication",
+        "pos": "名詞",
+        "meaning": "複雑化"
+      }
+    ],
+    "example_en": "Don't complicate things unnecessarily.",
+    "example_ja": "不必要に物事を複雑にしないでください。",
+    "toeic_level": 700,
+    "sort_order": 138
+  },
+  {
+    "id": "word_duplicate",
+    "etymology_id": "etym_plic",
+    "word": "duplicate",
+    "pronunciation": "djúːpləkèit",
+    "prefix": "du-",
+    "prefix_meaning": "二つの",
+    "prefix_meaning_en": "two",
+    "root": "-plic/ply",
+    "root_meaning_ja": "折る/重ねる",
+    "suffix": "-ate",
+    "suffix_meaning": "〜する",
+    "combined_meaning": "二つに折り重ねる",
+    "meaning_ja": "複製する",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "duplication",
+        "pos": "名詞",
+        "meaning": "複製"
+      }
+    ],
+    "example_en": "Please duplicate this document for all attendees.",
+    "example_ja": "出席者全員分この書類を複製してください。",
+    "toeic_level": 700,
+    "sort_order": 139
+  },
+
+  {
+    "id": "word_capture",
+    "etymology_id": "etym_cap",
+    "word": "capture",
+    "pronunciation": "kǽptʃər",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-cap",
+    "root_meaning_ja": "掴む/取る",
+    "suffix": "-ure",
+    "suffix_meaning": "行為・結果",
+    "combined_meaning": "掴むこと",
+    "meaning_ja": "捕まえる",
+    "meaning_sub_ja": "捕獲する",
+    "part_of_speech": "動詞",
+    "derivatives": [],
+    "example_en": "The photographer captured a beautiful sunset.",
+    "example_ja": "写真家は美しい夕日を撮影した。",
+    "toeic_level": 700,
+    "sort_order": 140
+  },
+  {
+    "id": "word_accept",
+    "etymology_id": "etym_cap",
+    "word": "accept",
+    "pronunciation": "æksépt",
+    "prefix": "ac-",
+    "prefix_meaning": "〜の方へ",
+    "prefix_meaning_en": "toward",
+    "root": "-cap/cept",
+    "root_meaning_ja": "掴む/取る",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "〜の方へ取る",
+    "meaning_ja": "受け入れる",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "acceptance",
+        "pos": "名詞",
+        "meaning": "受容"
+      },
+      {
+        "word": "acceptable",
+        "pos": "形容詞",
+        "meaning": "許容できる"
+      }
+    ],
+    "example_en": "She accepted the job offer immediately.",
+    "example_ja": "彼女はすぐにその仕事のオファーを受け入れた。",
+    "toeic_level": 600,
+    "sort_order": 141
+  },
+  {
+    "id": "word_participate",
+    "etymology_id": "etym_cap",
+    "word": "participate",
+    "pronunciation": "pɑːrtísəpèit",
+    "prefix": "parti-",
+    "prefix_meaning": "部分",
+    "prefix_meaning_en": "part",
+    "root": "-cap",
+    "root_meaning_ja": "掴む/取る",
+    "suffix": "-ate",
+    "suffix_meaning": "〜する",
+    "combined_meaning": "部分を取る",
+    "meaning_ja": "参加する",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "participation",
+        "pos": "名詞",
+        "meaning": "参加"
+      },
+      {
+        "word": "participant",
+        "pos": "名詞",
+        "meaning": "参加者"
+      }
+    ],
+    "example_en": "All employees are encouraged to participate in the training.",
+    "example_ja": "全従業員が研修に参加することが推奨されている。",
+    "toeic_level": 700,
+    "sort_order": 142
+  },
+
+  {
+    "id": "word_generate",
+    "etymology_id": "etym_gen",
+    "word": "generate",
+    "pronunciation": "dʒénərèit",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-gen",
+    "root_meaning_ja": "生む",
+    "suffix": "-ate",
+    "suffix_meaning": "〜する",
+    "combined_meaning": "生み出す",
+    "meaning_ja": "生成する、発生させる",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "generation",
+        "pos": "名詞",
+        "meaning": "世代、生成"
+      }
+    ],
+    "example_en": "Solar panels generate electricity from sunlight.",
+    "example_ja": "ソーラーパネルは太陽光から電気を生成する。",
+    "toeic_level": 700,
+    "sort_order": 143
+  },
+  {
+    "id": "word_genius",
+    "etymology_id": "etym_gen",
+    "word": "genius",
+    "pronunciation": "dʒíːnjəs",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-gen",
+    "root_meaning_ja": "生む",
+    "suffix": "-ius",
+    "suffix_meaning": "人・性質",
+    "combined_meaning": "生まれつきの才能",
+    "meaning_ja": "天才",
+    "meaning_sub_ja": "",
+    "part_of_speech": "名詞",
+    "derivatives": [],
+    "example_en": "Einstein was a mathematical genius.",
+    "example_ja": "アインシュタインは数学の天才だった。",
+    "toeic_level": 600,
+    "sort_order": 144
+  },
+  {
+    "id": "word_gender",
+    "etymology_id": "etym_gen",
+    "word": "gender",
+    "pronunciation": "dʒéndər",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-gen",
+    "root_meaning_ja": "生む",
+    "suffix": "-er",
+    "suffix_meaning": "人・もの",
+    "combined_meaning": "生まれの種類",
+    "meaning_ja": "性別",
+    "meaning_sub_ja": "ジェンダー",
+    "part_of_speech": "名詞",
+    "derivatives": [],
+    "example_en": "Gender equality is an important social issue.",
+    "example_ja": "ジェンダー平等は重要な社会問題である。",
+    "toeic_level": 700,
+    "sort_order": 145
+  },
+
+  {
+    "id": "word_credit",
+    "etymology_id": "etym_cred",
+    "word": "credit",
+    "pronunciation": "krédit",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-cred",
+    "root_meaning_ja": "信じる",
+    "suffix": "-it",
+    "suffix_meaning": "もの",
+    "combined_meaning": "信じること",
+    "meaning_ja": "信用、クレジット",
+    "meaning_sub_ja": "",
+    "part_of_speech": "名詞",
+    "derivatives": [
+      {
+        "word": "creditor",
+        "pos": "名詞",
+        "meaning": "債権者"
+      }
+    ],
+    "example_en": "The company has a good credit rating.",
+    "example_ja": "その会社は良い信用格付けを持っている。",
+    "toeic_level": 600,
+    "sort_order": 146
+  },
+  {
+    "id": "word_incredible",
+    "etymology_id": "etym_cred",
+    "word": "incredible",
+    "pronunciation": "inkrédəbl",
+    "prefix": "in-",
+    "prefix_meaning": "否定",
+    "prefix_meaning_en": "not",
+    "root": "-cred",
+    "root_meaning_ja": "信じる",
+    "suffix": "-ible",
+    "suffix_meaning": "可能（形容詞）",
+    "combined_meaning": "信じられない",
+    "meaning_ja": "信じられない",
+    "meaning_sub_ja": "素晴らしい",
+    "part_of_speech": "形容詞",
+    "derivatives": [
+      {
+        "word": "incredibly",
+        "pos": "副詞",
+        "meaning": "信じられないほど"
+      }
+    ],
+    "example_en": "The view from the top was incredible.",
+    "example_ja": "頂上からの景色は信じられないほど素晴らしかった。",
+    "toeic_level": 600,
+    "sort_order": 147
+  },
+  {
+    "id": "word_credibility",
+    "etymology_id": "etym_cred",
+    "word": "credibility",
+    "pronunciation": "krèdəbíləti",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-cred",
+    "root_meaning_ja": "信じる",
+    "suffix": "-ibility",
+    "suffix_meaning": "性質・状態",
+    "combined_meaning": "信じられる性質",
+    "meaning_ja": "信頼性",
+    "meaning_sub_ja": "",
+    "part_of_speech": "名詞",
+    "derivatives": [
+      {
+        "word": "credible",
+        "pos": "形容詞",
+        "meaning": "信頼できる"
+      }
+    ],
+    "example_en": "The scandal damaged his credibility.",
+    "example_ja": "そのスキャンダルは彼の信頼性を損なった。",
+    "toeic_level": 800,
+    "sort_order": 148
+  },
+
+  {
+    "id": "word_command",
+    "etymology_id": "etym_mand",
+    "word": "command",
+    "pronunciation": "kəmǽnd",
+    "prefix": "com-",
+    "prefix_meaning": "共に",
+    "prefix_meaning_en": "together",
+    "root": "-mand",
+    "root_meaning_ja": "命じる/託す",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "完全に命じる",
+    "meaning_ja": "命令する",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "commander",
+        "pos": "名詞",
+        "meaning": "司令官"
+      }
+    ],
+    "example_en": "The general commanded his troops to advance.",
+    "example_ja": "将軍は部隊に前進を命じた。",
+    "toeic_level": 700,
+    "sort_order": 149
+  },
+  {
+    "id": "word_demand",
+    "etymology_id": "etym_mand",
+    "word": "demand",
+    "pronunciation": "dimǽnd",
+    "prefix": "de-",
+    "prefix_meaning": "離れて/下に",
+    "prefix_meaning_en": "down",
+    "root": "-mand",
+    "root_meaning_ja": "命じる/託す",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "強く命じる",
+    "meaning_ja": "要求する、需要",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "demanding",
+        "pos": "形容詞",
+        "meaning": "要求の厳しい"
+      }
+    ],
+    "example_en": "The demand for electric cars is increasing.",
+    "example_ja": "電気自動車の需要が増加している。",
+    "toeic_level": 700,
+    "sort_order": 150
+  },
+  {
+    "id": "word_recommend",
+    "etymology_id": "etym_mand",
+    "word": "recommend",
+    "pronunciation": "rèkəménd",
+    "prefix": "re-",
+    "prefix_meaning": "再び/元に",
+    "prefix_meaning_en": "again",
+    "root": "-mand",
+    "root_meaning_ja": "命じる/託す",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "再び託す",
+    "meaning_ja": "推薦する",
+    "meaning_sub_ja": "勧める",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "recommendation",
+        "pos": "名詞",
+        "meaning": "推薦"
+      }
+    ],
+    "example_en": "I recommend this restaurant for its excellent service.",
+    "example_ja": "素晴らしいサービスのこのレストランをお勧めします。",
+    "toeic_level": 700,
+    "sort_order": 151
+  },
+
+  {
+    "id": "word_serve",
+    "etymology_id": "etym_serv",
+    "word": "serve",
+    "pronunciation": "sə́ːrv",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-serv",
+    "root_meaning_ja": "仕える/保つ",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "仕える",
+    "meaning_ja": "仕える、提供する",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "service",
+        "pos": "名詞",
+        "meaning": "サービス"
+      },
+      {
+        "word": "servant",
+        "pos": "名詞",
+        "meaning": "召使い"
+      }
+    ],
+    "example_en": "The restaurant serves breakfast from 7 a.m.",
+    "example_ja": "そのレストランは午前7時から朝食を提供する。",
+    "toeic_level": 600,
+    "sort_order": 152
+  },
+  {
+    "id": "word_conserve",
+    "etymology_id": "etym_serv",
+    "word": "conserve",
+    "pronunciation": "kənsə́ːrv",
+    "prefix": "con-",
+    "prefix_meaning": "共に",
+    "prefix_meaning_en": "together",
+    "root": "-serv",
+    "root_meaning_ja": "仕える/保つ",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "共に保つ",
+    "meaning_ja": "保存する",
+    "meaning_sub_ja": "節約する",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "conservation",
+        "pos": "名詞",
+        "meaning": "保存、保護"
+      },
+      {
+        "word": "conservative",
+        "pos": "形容詞",
+        "meaning": "保守的な"
+      }
+    ],
+    "example_en": "We must conserve energy for future generations.",
+    "example_ja": "私たちは将来の世代のためにエネルギーを節約しなければならない。",
+    "toeic_level": 700,
+    "sort_order": 153
+  },
+  {
+    "id": "word_preserve",
+    "etymology_id": "etym_serv",
+    "word": "preserve",
+    "pronunciation": "prizə́ːrv",
+    "prefix": "pre-",
+    "prefix_meaning": "前に",
+    "prefix_meaning_en": "before",
+    "root": "-serv",
+    "root_meaning_ja": "仕える/保つ",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "前もって保つ",
+    "meaning_ja": "保護する、維持する",
+    "meaning_sub_ja": "",
+    "part_of_speech": "動詞",
+    "derivatives": [
+      {
+        "word": "preservation",
+        "pos": "名詞",
+        "meaning": "保存"
+      }
+    ],
+    "example_en": "We should preserve traditional culture.",
+    "example_ja": "私たちは伝統文化を保護すべきだ。",
+    "toeic_level": 700,
+    "sort_order": 154
+  },
+
+  {
+    "id": "word_secure",
+    "etymology_id": "etym_cure",
+    "word": "secure",
+    "pronunciation": "sikjúər",
+    "prefix": "se-",
+    "prefix_meaning": "離れて",
+    "prefix_meaning_en": "apart",
+    "root": "-cure",
+    "root_meaning_ja": "注意/世話",
+    "suffix": "",
+    "suffix_meaning": "行為・状態",
+    "combined_meaning": "心配から離れた",
+    "meaning_ja": "安全な、確保する",
+    "meaning_sub_ja": "",
+    "part_of_speech": "形容詞",
+    "derivatives": [
+      {
+        "word": "security",
+        "pos": "名詞",
+        "meaning": "安全、セキュリティ"
+      }
+    ],
+    "example_en": "Make sure the building is secure before leaving.",
+    "example_ja": "退出する前に建物が安全であることを確認してください。",
+    "toeic_level": 700,
+    "sort_order": 155
+  },
+  {
+    "id": "word_curious",
+    "etymology_id": "etym_cure",
+    "word": "curious",
+    "pronunciation": "kjúəriəs",
+    "prefix": "",
+    "prefix_meaning": "",
+    "prefix_meaning_en": "",
+    "root": "-cure",
+    "root_meaning_ja": "注意/世話",
+    "suffix": "-ous",
+    "suffix_meaning": "性質（形容詞）",
+    "combined_meaning": "注意を向ける性質の",
+    "meaning_ja": "好奇心の強い",
+    "meaning_sub_ja": "",
+    "part_of_speech": "形容詞",
+    "derivatives": [
+      {
+        "word": "curiosity",
+        "pos": "名詞",
+        "meaning": "好奇心"
+      }
+    ],
+    "example_en": "Children are naturally curious about the world.",
+    "example_ja": "子供は生まれつき世界に対して好奇心旺盛だ。",
+    "toeic_level": 600,
+    "sort_order": 156
+  },
+  {
+    "id": "word_accurate",
+    "etymology_id": "etym_cure",
+    "word": "accurate",
+    "pronunciation": "ǽkjərət",
+    "prefix": "ac-",
+    "prefix_meaning": "〜の方へ",
+    "prefix_meaning_en": "toward",
+    "root": "-cure",
+    "root_meaning_ja": "注意/世話",
+    "suffix": "-ate",
+    "suffix_meaning": "性質（形容詞）",
+    "combined_meaning": "注意を向けた",
+    "meaning_ja": "正確な",
+    "meaning_sub_ja": "",
+    "part_of_speech": "形容詞",
+    "derivatives": [
+      {
+        "word": "accuracy",
+        "pos": "名詞",
+        "meaning": "正確さ"
+      }
+    ],
+    "example_en": "The data must be accurate and up to date.",
+    "example_ja": "データは正確で最新でなければならない。",
+    "toeic_level": 700,
+    "sort_order": 157
   }
 ]
