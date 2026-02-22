@@ -1,13 +1,13 @@
 import { View, Text, StyleSheet, ScrollView, ActivityIndicator, TouchableOpacity } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useState, useEffect } from 'react';
-import { Word } from '../../features/etymology/types';
-import { etymologyService } from '../../features/etymology/services/etymologyService';
-import { WordDecomposition } from '../../features/etymology/components/WordDecomposition';
-import { COLORS } from '../../shared/constants/colors';
-import { SPACING } from '../../shared/constants/spacing';
+import { Word } from '../../../features/etymology/types';
+import { etymologyService } from '../../../features/etymology/services/etymologyService';
+import { WordDecomposition } from '../../../features/etymology/components/WordDecomposition';
+import { COLORS } from '../../../shared/constants/colors';
+import { SPACING } from '../../../shared/constants/spacing';
 import { Ionicons } from '@expo/vector-icons';
-import { audio } from '../../lib/audio';
+import { audio } from '../../../lib/audio';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 export default function WordDetailScreen() {
