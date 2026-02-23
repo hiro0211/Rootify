@@ -214,7 +214,7 @@ Automated 2-phase TDD implementation by ${PROJECT_NAME} AI Task Runner v4.
 
 ## Implementation Plan
 <details>
-<summary>Click to expand Opus's implementation plan</summary>
+<summary>Click to expand the Opus implementation plan</summary>
 
 ${plan_summary}
 </details>
@@ -261,7 +261,7 @@ wait_for_rate_limit() {
     $RUNNING || return 1
 
     local probe
-    probe=$($CLAUDE_CMD -p "Reply with OK" \
+    probe=$(env -u CLAUDECODE $CLAUDE_CMD -p "Reply with OK" \
       --max-turns 1 --model "$model" --output-format text 2>&1) || true
 
     if ! is_rate_limited "$probe"; then
@@ -288,7 +288,7 @@ invoke_claude() {
 
   while $RUNNING; do
     local output
-    output=$($CLAUDE_CMD -p "$prompt" \
+    output=$(env -u CLAUDECODE $CLAUDE_CMD -p "$prompt" \
       --dangerously-skip-permissions \
       --allowedTools "$tools" \
       --append-system-prompt-file "$system_prompt_file" \
