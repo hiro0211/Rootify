@@ -7,26 +7,12 @@ import { useEffect } from 'react';
 
 interface Props {
   word: Word;
-  autoPlayAudio?: boolean;
 }
 
-export function QuizWordDisplay({ word, autoPlayAudio = true }: Props) {
-  
-  useEffect(() => {
-    if (autoPlayAudio) {
-      audio.speak(word.word);
-    }
-  }, [word, autoPlayAudio]);
-
+export function QuizWordDisplay({ word }: Props) {
   return (
     <View style={styles.container}>
       <Text style={styles.word}>{word.word}</Text>
-      <TouchableOpacity 
-        style={styles.speaker}
-        onPress={() => audio.speak(word.word)}
-      >
-        <Ionicons name="volume-high" size={24} color={COLORS.PRIMARY} />
-      </TouchableOpacity>
     </View>
   );
 }

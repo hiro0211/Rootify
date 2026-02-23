@@ -11,7 +11,7 @@ import { Ionicons } from '@expo/vector-icons';
 export default function EtymologyDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   // This is a workaround for expo-router 3.x type issue or just generic handling
-  const etymologyId = Array.isArray(id) ? id[0] : id; 
+  const etymologyId = Array.isArray(id) ? id[0] : id;
   const { data, isLoading } = useEtymologyDetail(etymologyId!);
   const router = useRouter();
   const insets = useSafeAreaInsets();
@@ -28,8 +28,8 @@ export default function EtymologyDetailScreen() {
     <View style={styles.container}>
       <ScrollView contentContainerStyle={[styles.content, { paddingBottom: 100 }]}>
         <View style={styles.header}>
-            <Text style={styles.root}>{data.root}</Text>
-            <Text style={styles.rootMeaning}> = {data.root_meaning_ja}</Text>
+          <Text style={styles.root}>{data.root}</Text>
+          <Text style={styles.rootMeaning}> = {data.root_meaning_ja}</Text>
         </View>
         <Text style={styles.description}>{data.description_ja}</Text>
 
@@ -38,9 +38,9 @@ export default function EtymologyDetailScreen() {
 
         <Text style={styles.sectionTitle}>収録単語 ({data.words.length})</Text>
         {data.words.map((word) => (
-          <WordCard 
-            key={word.id} 
-            word={word} 
+          <WordCard
+            key={word.id}
+            word={word}
             onPress={() => router.push(`/etymology/word/${word.id}`)}
           />
         ))}
@@ -48,7 +48,7 @@ export default function EtymologyDetailScreen() {
 
       {/* Sticky CTA */}
       <View style={[styles.ctaContainer, { paddingBottom: insets.bottom + SPACING.M }]}>
-        <TouchableOpacity 
+        <TouchableOpacity
           style={styles.ctaButton}
           onPress={() => router.push({
             pathname: '/quiz/play',

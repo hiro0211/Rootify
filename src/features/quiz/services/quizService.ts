@@ -12,11 +12,9 @@ export const quizService = {
 
     const allWords = await etymologyService.getAllWords();
 
-    // Select words for quiz
-    // If fewer words than count, repeat or just return available
-    const selectedWords = words.length >= count 
-        ? words.slice(0, count) 
-        : words; // For MVP, simple logic. If < 5, might need to supplement.
+    // Shuffle words to make the quiz order different each time
+    const shuffledWords = [...words].sort(() => 0.5 - Math.random());
+    const selectedWords = shuffledWords.slice(0, count);
 
     const questions: QuizQuestion[] = [];
 

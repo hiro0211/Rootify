@@ -51,14 +51,20 @@ describe('quizService', () => {
       });
     });
 
-    it('デフォルトで最大10問生成されること（US-02: 1セッション10問）', async () => {
-      const questions = await quizService.generateQuestionsByEtymology('etym_tract');
-      expect(questions.length).toBeLessThanOrEqual(10);
+    it('語源に紐づく単語数がcount未満の場合、可能な限りのユニークな問題数が返されること', async () => {
+      // Assuming 'etym_tract' has e.g. 5 words setup in the DB initially (or we mock it)
+      // The old behavior was returning exactly 10 by repeating.
+      // The new behavior is returning ONLY the distinct words.
+      const questions = await quizService.generateQuestionsByEtymology('etym_tract', 10);
+
+      const uniqueWordIds = new Set(questions.map(q => q.word.id));
+      // Length equals the number of unique words returned, meaning no repetition
+      expect(questions.length).toBe(uniqueWordIds.size);
     });
 
-    it('count引数で問題数を指定できること', async () => {
+    it('count引数で問題数を指定できること（単語数が十分にある前提）', async () => {
       const questions = await quizService.generateQuestionsByEtymology('etym_tract', 3);
-      expect(questions.length).toBeLessThanOrEqual(3);
+      expect(questions.length).toBe(3);
     });
 
     it('存在しない語源IDでエラーをスローすること', async () => {

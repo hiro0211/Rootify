@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { QuizQuestion, QuizSessionResult } from '../types';
 import { quizService } from '../services/quizService';
-import { audio } from '../../../lib/audio';
-import { haptics } from '../../../lib/haptics';
+import { feedbackService } from '../services/feedbackService';
 import { useMasteryStore } from '../../etymology/stores/useMasteryStore';
 
 export function useQuizSession(etymologyId: string | undefined) {
@@ -22,10 +21,10 @@ export function useQuizSession(etymologyId: string | undefined) {
     const init = async () => {
       try {
         if (!etymologyId) {
-            // If no ID, maybe random? MVP requires ID for "By Etymology"
-            // For now, load a default or error
-            console.error("No etymology ID provided");
-            return;
+          // If no ID, maybe random? MVP requires ID for "By Etymology"
+          // For now, load a default or error
+          console.error("No etymology ID provided");
+          return;
         }
         const qs = await quizService.generateQuestionsByEtymology(etymologyId);
         setQuestions(qs);
@@ -49,10 +48,9 @@ export function useQuizSession(etymologyId: string | undefined) {
 
     // Feedback
     if (correct) {
-      haptics.success();
-      audio.speak('Correct'); // Simple feedback
+      feedbackService.playCorrect();
     } else {
-      haptics.error();
+      feedbackService.playIncorrect();
     }
 
     // Update Mastery
@@ -77,7 +75,7 @@ export function useQuizSession(etymologyId: string | undefined) {
   const finishSession = (finalResults: boolean[]) => {
     const endTime = Date.now();
     const correctCount = finalResults.filter((r) => r).length;
-    
+
     // Identify weak etymologies (just the current one for this mode)
     const weakEtymologies = correctCount < questions.length * 0.8 ? [etymologyId!] : [];
 

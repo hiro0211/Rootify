@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, ActivityIndicator } from 'react-native';
+import { View, Text, StyleSheet, ActivityIndicator, TouchableOpacity, Alert } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useQuizSession } from '../../features/quiz/hooks/useQuizSession';
@@ -7,6 +7,7 @@ import { QuizWordDisplay } from '../../features/quiz/components/QuizWordDisplay'
 import { QuizChoiceButton } from '../../features/quiz/components/QuizChoiceButton';
 import { COLORS } from '../../shared/constants/colors';
 import { SPACING } from '../../shared/constants/spacing';
+import { Ionicons } from '@expo/vector-icons';
 import { useEffect } from 'react';
 
 export default function QuizPlayScreen() {
@@ -16,7 +17,7 @@ export default function QuizPlayScreen() {
 
   const router = useRouter();
   const insets = useSafeAreaInsets();
-  
+
   const {
     currentQuestion,
     currentIndex,
@@ -28,6 +29,17 @@ export default function QuizPlayScreen() {
     results,
     sessionResult,
   } = useQuizSession(eId || 'etym_tract'); // Fallback for testing
+
+  const handleClose = () => {
+    Alert.alert(
+      "クイズを終了しますか？",
+      "現在の進捗は保存されません",
+      [
+        { text: "キャンセル", style: "cancel" },
+        { text: "終了", style: "destructive", onPress: () => router.back() }
+      ]
+    );
+  };
 
   useEffect(() => {
     if (isFinished && sessionResult) {
@@ -53,10 +65,19 @@ export default function QuizPlayScreen() {
 
   return (
     <View style={[styles.container, { paddingTop: insets.top + SPACING.M, paddingBottom: insets.bottom + SPACING.M }]}>
-      
+
       {/* Header / Progress */}
       <View style={styles.header}>
-        <Text style={styles.progressText}>Q {currentIndex + 1} / {total}</Text>
+        <View style={styles.headerTop}>
+          <Text style={styles.progressText}>Q {currentIndex + 1} / {total}</Text>
+          <TouchableOpacity
+            style={styles.closeButton}
+            onPress={handleClose}
+            testID="close-quiz-button"
+          >
+            <Ionicons name="close" size={28} color={COLORS.TEXT_SUB} />
+          </TouchableOpacity>
+        </View>
         <QuizProgressBar total={total} current={currentIndex} results={results} />
       </View>
 
@@ -69,7 +90,7 @@ export default function QuizPlayScreen() {
       <View style={styles.choicesContainer}>
         {currentQuestion.choices.map((choice, index) => {
           let state: 'idle' | 'selected' | 'correct' | 'incorrect' | 'missed' = 'idle';
-          
+
           if (selectedChoiceIndex !== null) {
             // User has answered
             if (index === selectedChoiceIndex) {
@@ -79,8 +100,8 @@ export default function QuizPlayScreen() {
               // This is the correct answer, but user didn't click it
               state = 'missed';
             } else {
-               // Unselected distractor
-               state = 'idle'; // Or disabled/dimmed
+              // Unselected distractor
+              state = 'idle'; // Or disabled/dimmed
             }
           }
 
@@ -114,11 +135,19 @@ const styles = StyleSheet.create({
   header: {
     marginBottom: 24,
   },
+  headerTop: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 8,
+  },
   progressText: {
     fontSize: 14,
     color: COLORS.TEXT_SUB,
-    marginBottom: 8,
     fontWeight: '600',
+  },
+  closeButton: {
+    padding: 4,
   },
   questionContainer: {
     flex: 1,

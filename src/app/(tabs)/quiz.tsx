@@ -37,8 +37,8 @@ export default function QuizSelectionScreen() {
 
       <Text style={styles.sectionTitle}>デイリー</Text>
       {renderCard(
-        "今日の復習",
-        "忘却曲線に基づく最適な復習",
+        "復習",
+        "",
         "refresh",
         COLORS.SUCCESS,
         () => router.push({ pathname: '/quiz/play', params: { mode: 'review' } }) // Logic for review needed in play

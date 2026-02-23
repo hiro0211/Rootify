@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { WordMastery, wordMasteryRepository } from '../services/wordMasteryRepository';
+import { calculateNextReview } from '../../review/services/reviewService';
 
 interface MasteryState {
   masteries: Record<string, WordMastery>;
@@ -28,36 +29,33 @@ export const useMasteryStore = create<MasteryState>((set, get) => ({
       consecutiveCorrect: 0,
     };
 
-    // Simple SRS logic for MVP
-    // Correct: Level up, increase interval
-    // Incorrect: Reset to Level 1 (not 0, as they've seen it)
-    let newLevel = current.level;
-    let newConsecutive = current.consecutiveCorrect;
-    
-    if (isCorrect) {
-      newLevel = Math.min(4, current.level + 1);
-      newConsecutive += 1;
-    } else {
-      newLevel = 1;
-      newConsecutive = 0;
+    // Calculate current interval
+    let currentIntervalDays: number | null = null;
+    const oneDay = 24 * 60 * 60 * 1000;
+    if (current.lastReviewedDate && current.nextReviewDate) {
+      currentIntervalDays = Math.round((current.nextReviewDate - current.lastReviewedDate) / oneDay);
     }
 
-    // Interval calculation (mock)
-    const now = Date.now();
-    const oneDay = 24 * 60 * 60 * 1000;
-    let interval = oneDay;
-    if (newLevel === 2) interval = 3 * oneDay;
-    if (newLevel === 3) interval = 7 * oneDay;
-    if (newLevel === 4) interval = 30 * oneDay;
+    const { level: newLevel, nextReviewAt } = calculateNextReview(
+      current.level,
+      currentIntervalDays,
+      isCorrect,
+      new Date()
+    );
 
-    const nextDate = now + interval;
+    let newConsecutive = current.consecutiveCorrect;
+    if (isCorrect) {
+      newConsecutive += 1;
+    } else {
+      newConsecutive = 0;
+    }
 
     const updated: WordMastery = {
       ...current,
       level: newLevel,
       consecutiveCorrect: newConsecutive,
-      lastReviewedDate: now,
-      nextReviewDate: nextDate,
+      lastReviewedDate: Date.now(),
+      nextReviewDate: nextReviewAt.getTime(),
     };
 
     // Optimistic update

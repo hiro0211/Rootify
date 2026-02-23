@@ -34,3 +34,8 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# Automation task runner
+automation/queue/pending/*.txt
+automation/queue/running/*.txt
+automation/logs/

@@ -108,8 +108,8 @@ describe('Data Integrity', () => {
       });
     });
 
-    test('toeic_levelが600〜800の範囲であること（TOEIC対応レベル）', () => {
-      const validLevels = [600, 700, 800];
+    test('toeic_levelが有効な範囲であること（TOEIC対応レベル: 300〜800）', () => {
+      const validLevels = [300, 400, 500, 600, 700, 800];
       words.forEach((word) => {
         if (word.toeic_level !== undefined && word.toeic_level !== 0) {
           expect(validLevels).toContain(word.toeic_level);
@@ -134,26 +134,26 @@ describe('Data Integrity', () => {
       expect(words.length).toBeGreaterThanOrEqual(50);
     });
 
-    test('各語源に少なくとも1つの単語が紐づくこと', () => {
+    test('各語源に少なくとも5つの単語が紐づくこと', () => {
       const wordsByEtym = new Map<string, number>();
       words.forEach((w) => {
         const count = wordsByEtym.get(w.etymology_id) || 0;
         wordsByEtym.set(w.etymology_id, count + 1);
       });
 
-      const etymsWithoutWords: string[] = [];
+      const etymsWithFewWords: string[] = [];
       etymologies.forEach((etym) => {
         const wordCount = wordsByEtym.get(etym.id) || 0;
-        if (wordCount === 0) {
-          etymsWithoutWords.push(etym.id);
+        if (wordCount < 5) {
+          etymsWithFewWords.push(`${etym.id} (${wordCount} words)`);
         }
       });
 
-      if (etymsWithoutWords.length > 0) {
-        console.warn('Etymologies without words:', etymsWithoutWords);
+      if (etymsWithFewWords.length > 0) {
+        console.warn('Etymologies with fewer than 5 words:', etymsWithFewWords);
       }
-      // 全語源に少なくとも1単語紐づくべき
-      expect(etymsWithoutWords.length).toBe(0);
+      // 全語源に少なくとも5単語紐づくべき（contents.md仕様）
+      expect(etymsWithFewWords.length).toBe(0);
     });
   });
 
