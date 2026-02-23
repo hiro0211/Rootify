@@ -214,7 +214,7 @@ Automated 2-phase TDD implementation by ${PROJECT_NAME} AI Task Runner v4.
 
 ## Implementation Plan
 <details>
-<summary>Click to expand Opus's implementation plan</summary>
+<summary>Click to expand the Opus implementation plan</summary>
 
 ${plan_summary}
 </details>
