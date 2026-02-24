@@ -1,17 +1,11 @@
-import * as Haptics from 'expo-haptics';
 import { feedbackService } from '../feedbackService';
+import { haptics } from '../../../../lib/haptics';
 
-jest.mock('expo-haptics', () => ({
-    notificationAsync: jest.fn(),
-    impactAsync: jest.fn(),
-    NotificationFeedbackType: {
-        Success: 'Success',
-        Error: 'Error',
-    },
-    ImpactFeedbackStyle: {
-        Light: 'Light',
-        Medium: 'Medium',
-        Heavy: 'Heavy',
+jest.mock('../../../../lib/haptics', () => ({
+    haptics: {
+        success: jest.fn(),
+        error: jest.fn(),
+        light: jest.fn(),
     }
 }));
 
@@ -20,13 +14,18 @@ describe('feedbackService', () => {
         jest.clearAllMocks();
     });
 
-    it('playCorrect plays a success haptic notification', async () => {
+    it('playCorrect calls haptics.success', async () => {
         await feedbackService.playCorrect();
-        expect(Haptics.notificationAsync).toHaveBeenCalledWith(Haptics.NotificationFeedbackType.Success);
+        expect(haptics.success).toHaveBeenCalled();
     });
 
-    it('playIncorrect plays an error haptic notification', async () => {
+    it('playIncorrect calls haptics.error', async () => {
         await feedbackService.playIncorrect();
-        expect(Haptics.notificationAsync).toHaveBeenCalledWith(Haptics.NotificationFeedbackType.Error);
+        expect(haptics.error).toHaveBeenCalled();
+    });
+
+    it('playSelection calls haptics.light', async () => {
+        await feedbackService.playSelection();
+        expect(haptics.light).toHaveBeenCalled();
     });
 });

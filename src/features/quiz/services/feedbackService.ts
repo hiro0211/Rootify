@@ -1,25 +1,7 @@
-import * as Haptics from 'expo-haptics';
+import { haptics } from '../../../lib/haptics';
 
 export const feedbackService = {
-    playCorrect: async () => {
-        try {
-            await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-        } catch (error) {
-            console.warn('Haptics not supported or failed', error);
-        }
-    },
-    playIncorrect: async () => {
-        try {
-            await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
-        } catch (error) {
-            console.warn('Haptics not supported or failed', error);
-        }
-    },
-    playSelection: async () => {
-        try {
-            await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-        } catch (error) {
-            console.warn('Haptics not supported or failed', error);
-        }
-    }
+    playCorrect: async () => { await haptics.success(); },
+    playIncorrect: async () => { await haptics.error(); },
+    playSelection: async () => { await haptics.light(); },
 };
