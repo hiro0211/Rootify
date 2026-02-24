@@ -22,7 +22,7 @@ export const useSettingsStore = create<SettingsState>()(
       setHaptics: (enabled) => set({ hapticsEnabled: enabled }),
     }),
     {
-      name: 'rootify-settings-storage',
+      name: 'wordroot-settings-storage',
       storage: createJSONStorage(() => AsyncStorage),
     }
   )

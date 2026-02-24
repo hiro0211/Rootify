@@ -49,7 +49,7 @@ export default function SettingsScreen() {
         </View>
       ))}
 
-      <Text style={styles.version}>Rootify v1.0.0 (MVP)</Text>
+      <Text style={styles.version}>WordRoot v1.0.0 (MVP)</Text>
     </ScrollView>
   );
 }

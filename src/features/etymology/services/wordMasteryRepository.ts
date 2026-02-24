@@ -8,7 +8,7 @@ export interface WordMastery {
   consecutiveCorrect: number;
 }
 
-const STORAGE_KEY = 'rootify_word_mastery';
+const STORAGE_KEY = 'wordroot_word_mastery';
 
 export const wordMasteryRepository = {
   getAll: async (): Promise<Record<string, WordMastery>> => {
