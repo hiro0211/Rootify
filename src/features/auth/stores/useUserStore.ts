@@ -43,7 +43,7 @@ export const useUserStore = create<UserState>()(
       updateDailyGoal: (goal) => set({ dailyGoal: goal }),
     }),
     {
-      name: 'rootify-user-storage',
+      name: 'wordroot-user-storage',
       storage: createJSONStorage(() => AsyncStorage),
     }
   )

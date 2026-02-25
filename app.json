@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "app_init",
-    "slug": "app_init",
+    "name": "WordRoot",
+    "slug": "wordroot",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "wordroot",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
@@ -15,7 +15,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.app-init"
+      "bundleIdentifier": "com.wordroot.app"
     },
     "android": {
       "adaptiveIcon": {

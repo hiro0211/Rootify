@@ -29,7 +29,7 @@ set -uo pipefail
 # ── Project Configuration ─────────────────────────────────────────────────
 # プロジェクト固有の設定。新プロジェクトへの展開時はここだけ変更する。
 # ──────────────────────────────────────────────────────────────────────────
-PROJECT_NAME="Rootify"
+PROJECT_NAME="WordRoot"
 BASE_BRANCH="main"
 TEST_CMD="npx jest --config jest.config.js --no-watchman --passWithNoTests"
 
