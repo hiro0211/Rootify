@@ -1,3 +1,5 @@
+import { WordMastery } from '../../etymology/services/wordMasteryRepository';
+
 export type ReviewResult = {
     level: number;
     nextReviewAt: Date;

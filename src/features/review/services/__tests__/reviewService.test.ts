@@ -1,4 +1,5 @@
-import { calculateNextReview, ReviewResult } from '../reviewService';
+import { calculateNextReview, getReviewDueWords, ReviewResult } from '../reviewService';
+import { WordMastery } from '../../../etymology/services/wordMasteryRepository';
 
 describe('reviewService - Spaced Repetition Algorithm', () => {
     const baseDate = new Date('2023-10-01T12:00:00Z');
@@ -60,5 +61,40 @@ describe('reviewService - Spaced Repetition Algorithm', () => {
             expectedDate.setDate(expectedDate.getDate() + 1);
             expect(result.nextReviewAt.toISOString()).toBe(expectedDate.toISOString());
         });
+    });
+});
+
+describe('getReviewDueWords', () => {
+    it('returns wordIds whose nextReviewDate is in the past', () => {
+        const now = Date.now();
+        const masteries: Record<string, WordMastery> = {
+            word_1: { wordId: 'word_1', level: 2, nextReviewDate: now - 1000, lastReviewedDate: now - 100000, consecutiveCorrect: 1 },
+            word_2: { wordId: 'word_2', level: 3, nextReviewDate: now + 100000, lastReviewedDate: now - 50000, consecutiveCorrect: 2 },
+            word_3: { wordId: 'word_3', level: 1, nextReviewDate: now - 5000, lastReviewedDate: now - 200000, consecutiveCorrect: 0 },
+        };
+        const result = getReviewDueWords(masteries);
+        expect(result).toContain('word_1');
+        expect(result).toContain('word_3');
+        expect(result).not.toContain('word_2');
+        expect(result).toHaveLength(2);
+    });
+
+    it('returns empty array when no words are due', () => {
+        const now = Date.now();
+        const masteries: Record<string, WordMastery> = {
+            word_1: { wordId: 'word_1', level: 2, nextReviewDate: now + 100000, lastReviewedDate: now - 50000, consecutiveCorrect: 1 },
+        };
+        expect(getReviewDueWords(masteries)).toEqual([]);
+    });
+
+    it('excludes words with null nextReviewDate', () => {
+        const masteries: Record<string, WordMastery> = {
+            word_1: { wordId: 'word_1', level: 0, nextReviewDate: null, lastReviewedDate: null, consecutiveCorrect: 0 },
+        };
+        expect(getReviewDueWords(masteries)).toEqual([]);
+    });
+
+    it('returns empty array for empty masteries', () => {
+        expect(getReviewDueWords({})).toEqual([]);
     });
 });

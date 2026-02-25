@@ -1,18 +1,12 @@
-import * as Haptics from 'expo-haptics';
 import { feedbackService } from '../feedbackService';
+import { haptics } from '../../../../lib/haptics';
 
-// Mock expo-haptics
-jest.mock('expo-haptics', () => ({
-    notificationAsync: jest.fn(),
-    impactAsync: jest.fn(),
-    NotificationFeedbackType: {
-        Success: 'Success',
-        Error: 'Error',
-    },
-    ImpactFeedbackStyle: {
-        Light: 'Light',
-        Medium: 'Medium',
-        Heavy: 'Heavy',
+// Mock haptics (from lib/haptics)
+jest.mock('../../../../lib/haptics', () => ({
+    haptics: {
+        success: jest.fn(),
+        error: jest.fn(),
+        light: jest.fn(),
     }
 }));
 
@@ -46,28 +40,28 @@ describe('feedbackService', () => {
         it('plays haptic and sound when both enabled', async () => {
             mockGetState.mockReturnValue({ soundEnabled: true, hapticsEnabled: true });
             await feedbackService.playCorrect();
-            expect(Haptics.notificationAsync).toHaveBeenCalledWith(Haptics.NotificationFeedbackType.Success);
+            expect(haptics.success).toHaveBeenCalled();
             expect(mockPlayCorrect).toHaveBeenCalledTimes(1);
         });
 
         it('plays haptic only when soundEnabled=false', async () => {
             mockGetState.mockReturnValue({ soundEnabled: false, hapticsEnabled: true });
             await feedbackService.playCorrect();
-            expect(Haptics.notificationAsync).toHaveBeenCalledWith(Haptics.NotificationFeedbackType.Success);
+            expect(haptics.success).toHaveBeenCalled();
             expect(mockPlayCorrect).not.toHaveBeenCalled();
         });
 
         it('plays sound only when hapticsEnabled=false', async () => {
             mockGetState.mockReturnValue({ soundEnabled: true, hapticsEnabled: false });
             await feedbackService.playCorrect();
-            expect(Haptics.notificationAsync).not.toHaveBeenCalled();
+            expect(haptics.success).not.toHaveBeenCalled();
             expect(mockPlayCorrect).toHaveBeenCalledTimes(1);
         });
 
         it('plays neither when both disabled', async () => {
             mockGetState.mockReturnValue({ soundEnabled: false, hapticsEnabled: false });
             await feedbackService.playCorrect();
-            expect(Haptics.notificationAsync).not.toHaveBeenCalled();
+            expect(haptics.success).not.toHaveBeenCalled();
             expect(mockPlayCorrect).not.toHaveBeenCalled();
         });
     });
@@ -76,28 +70,28 @@ describe('feedbackService', () => {
         it('plays haptic and sound when both enabled', async () => {
             mockGetState.mockReturnValue({ soundEnabled: true, hapticsEnabled: true });
             await feedbackService.playIncorrect();
-            expect(Haptics.notificationAsync).toHaveBeenCalledWith(Haptics.NotificationFeedbackType.Error);
+            expect(haptics.error).toHaveBeenCalled();
             expect(mockPlayIncorrect).toHaveBeenCalledTimes(1);
         });
 
         it('plays haptic only when soundEnabled=false', async () => {
             mockGetState.mockReturnValue({ soundEnabled: false, hapticsEnabled: true });
             await feedbackService.playIncorrect();
-            expect(Haptics.notificationAsync).toHaveBeenCalledWith(Haptics.NotificationFeedbackType.Error);
+            expect(haptics.error).toHaveBeenCalled();
             expect(mockPlayIncorrect).not.toHaveBeenCalled();
         });
 
         it('plays sound only when hapticsEnabled=false', async () => {
             mockGetState.mockReturnValue({ soundEnabled: true, hapticsEnabled: false });
             await feedbackService.playIncorrect();
-            expect(Haptics.notificationAsync).not.toHaveBeenCalled();
+            expect(haptics.error).not.toHaveBeenCalled();
             expect(mockPlayIncorrect).toHaveBeenCalledTimes(1);
         });
 
         it('plays neither when both disabled', async () => {
             mockGetState.mockReturnValue({ soundEnabled: false, hapticsEnabled: false });
             await feedbackService.playIncorrect();
-            expect(Haptics.notificationAsync).not.toHaveBeenCalled();
+            expect(haptics.error).not.toHaveBeenCalled();
             expect(mockPlayIncorrect).not.toHaveBeenCalled();
         });
     });
@@ -106,13 +100,13 @@ describe('feedbackService', () => {
         it('plays impact haptic when hapticsEnabled=true', async () => {
             mockGetState.mockReturnValue({ soundEnabled: true, hapticsEnabled: true });
             await feedbackService.playSelection();
-            expect(Haptics.impactAsync).toHaveBeenCalledWith(Haptics.ImpactFeedbackStyle.Light);
+            expect(haptics.light).toHaveBeenCalled();
         });
 
         it('does not play haptic when hapticsEnabled=false', async () => {
             mockGetState.mockReturnValue({ soundEnabled: false, hapticsEnabled: false });
             await feedbackService.playSelection();
-            expect(Haptics.impactAsync).not.toHaveBeenCalled();
+            expect(haptics.light).not.toHaveBeenCalled();
         });
     });
 });

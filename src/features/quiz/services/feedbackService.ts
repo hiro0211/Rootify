@@ -1,4 +1,4 @@
-import * as Haptics from 'expo-haptics';
+import { haptics } from '../../../lib/haptics';
 import { audioService } from '../../../lib/audio';
 import { useSettingsStore } from '../../settings/stores/useSettingsStore';
 
@@ -8,9 +8,7 @@ export const feedbackService = {
         const tasks: Promise<void>[] = [];
 
         if (hapticsEnabled) {
-            tasks.push(
-                Promise.resolve(Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)).catch(() => {})
-            );
+            tasks.push(haptics.success());
         }
         if (soundEnabled) {
             tasks.push(audioService.playCorrect());
@@ -24,9 +22,7 @@ export const feedbackService = {
         const tasks: Promise<void>[] = [];
 
         if (hapticsEnabled) {
-            tasks.push(
-                Promise.resolve(Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error)).catch(() => {})
-            );
+            tasks.push(haptics.error());
         }
         if (soundEnabled) {
             tasks.push(audioService.playIncorrect());
@@ -39,11 +35,7 @@ export const feedbackService = {
         const { hapticsEnabled } = useSettingsStore.getState();
 
         if (hapticsEnabled) {
-            try {
-                await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-            } catch {
-                // Silently fail
-            }
+            await haptics.light();
         }
     },
 };
